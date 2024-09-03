@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" );
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    height: 100%;
+    background: url("../background.jpg") no-repeat;
+    background-size:cover ;
+    background-position: center;
+}
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.modals{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn-open{
+width:300px;
+height: 50px;
+font-size: 20px;
+cursor: pointer;
+border-radius: 20px;
+border:none;
+transition: all 0.5s;
+}
+.btn-open:hover{
+transform: scale(1.02);
+}
+
+.modal__close-btn{
+    position: absolute;
+    border-radius: 40px;
+    border:2px solid rgba(24, 20, 20, 0.46);
+    background: transparent;
+    top:10px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.wrapper{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ;
+}
+.wrapper{
+    width: 420px;
+    background-color: transparent;
+    color: white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0  0 10px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    padding: 30px 40px;
+    
+}
+.modal--open{
+    opacity: 1;
+    visibility: visible;
+}
+.login{
+    font-size: 36px;
+    text-align: center;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px; 
+}
+.input-box input::placeholder{
+color: white;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember label input{
+accent-color: white;
+margin-right: 3px;
+}
+.remember a{
+    color: white;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow:  0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-weight: 600;
+}
+.register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link p a{
+color: white;
+text-decoration: none;
+font-weight: 600;
+}
+.register-link p a:hover{
+text-decoration: underline;
+}
+/* -==================================== */
+
+.reg {
+    display: block;
+}
+.register__modal {
+    width: 500px;
+    background-color: transparent;
+    color: white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0  0 10px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    padding: 30px 40px;
+    
+}
+.register__title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.input__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+.input__info input::placeholder{
+    color: white;
+}
+.input__info input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input--name {
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 14px;
+    color: white;
+    padding: 10px 15px;
+}
+
+
+.input--surname {
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 14px;
+    color: white;
+    padding: 10px 15px;
+}
+
+.input--mail input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input--mail input::placeholder{
+    color: white;
+}
+.input--mail{
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 14px;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+.input--password input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input--password input::placeholder{
+    color: white;
+}
+.input--password{
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 14px;
+    color: white;
+    padding: 10px 15px;
+    
+    margin-bottom: 30px;
+}
+.register__modal{
+opacity: 0;
+    visibility: hidden;
+    transition: all .3s ;
+}
+.register__modal-open{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width:650px) {
+    .buttons {
+        display: block;
+
+    }
+    .btn-open {
+        margin-bottom: 40px;
+    }
+    .modals{
+        display: block;
+        margin-left: 5px;
+    }
+    .wrapper {
+        width: 405px;
+        margin-bottom: 40px;
+    }
+    .register__modal {
+        width: 410px;
+    }
+}

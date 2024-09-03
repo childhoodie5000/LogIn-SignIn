@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="buttons">
+        <button class="btn-open">Sign In</button>
+        <button class="btn-open reg">Register</button>
+    </div>
+   <div class="modals">
+        <div class="wrapper">
+                <button class="modal__close-btn">X</button>
+                <form  action="">
+                    <h1 class="login">
+                        LogIn
+                    </h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <div class="remember">
+                        <label for="">
+                            <input type="checkbox"> Remember me</label>
+                            <a href="">Forgot password?</a>
+                        
+                    </div>
+                    <button type="submit" class="btn"> LogIn</button>
+                    <div class="register-link">
+                        <p>Don't have an account? 
+                            <a href="">Register</a>
+                        </p>
+                    </div>
+                </form>
+        </div>
+        <div class="register__modal">
+            <button class="modal__close-btn close-reg">X</button>
+            <form  action="">
+                <h1 class="register__title">
+                    Create Your Account
+                </h1>
+                <div class="input-box user">
+                    <input type="text" placeholder="create username" required>
+                </div>
+                <div class="input__info">
+                    <div class="input--name">
+                        <input type="text" placeholder="name" required>
+                        
+                    </div>
+                    <div class="input--surname">
+                            <input type="text"placeholder="surname" required>
+                    </div>
+                </div>
+                <div class="input--mail">
+                        <input type="email" placeholder="e-mail" required>
+                </div>
+                <div class="input--password">
+                        <input type="password" placeholder="password" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+                <div class="register-link">
+                    <p>Have an account? 
+                        <a href="">Sign In</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+   </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
